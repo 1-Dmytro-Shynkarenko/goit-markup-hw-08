@@ -1,0 +1,51 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+
+.container--header {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.container--hero {
+  text-align: center;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 360px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+  }
+}
+
+.container--footer {
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    @include flex(flex, null, null, null, baseline);
+    text-align: left;
+  }
+}

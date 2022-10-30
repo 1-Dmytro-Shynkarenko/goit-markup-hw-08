@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  border-bottom: 1px solid #ececec;
+  min-height: 60px;
+  background-color: var(--accent-text-and-bg-color);
+
+  @media screen and (min-width: $tablet) {
+    min-height: 80px;
+  }
+
+  .nav {
+    @include flex(flex, null, null, null, center);
+
+    @media screen and (min-width: $tablet) {
+      margin-right: auto;
+    }
+  }
+}
+
+.header__logo {
+  padding: 24px 0;
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
+}
