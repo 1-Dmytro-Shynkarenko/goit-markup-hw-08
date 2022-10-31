@@ -238,9 +238,6 @@ input:-webkit-autofill:active {
 .menu__top {
   margin-bottom: 20px;
 }
-.menu__top .menu__link {
-  font-size: 10vw;
-}
 
 .menu__bottom .contact__link {
   font-size: 6vw;
@@ -276,7 +273,7 @@ input:-webkit-autofill:active {
 .menu__link {
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 5vw;
   padding: 0;
   line-height: 1.18;
   color: var(--main-text-color);
@@ -290,11 +287,18 @@ input:-webkit-autofill:active {
 .menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .menu__link {
+    margin-right: 50px;
+    font-size: 40px;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu__link {
     position: relative;
     padding: 32px 0;
     line-height: 1.14;
+    font-size: 14px;
   }
 }
 
@@ -395,16 +399,16 @@ input:-webkit-autofill:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 64px;
 }
 
 .menu-social__link {
   padding: 10px;
   font-weight: 500;
-  font-size: 3vw;
+  font-size: 18px;
   line-height: 1.22px;
   color: var(--accent-color);
 }
@@ -412,6 +416,10 @@ input:-webkit-autofill:active {
 .menu-social__item + .menu-social__item::before {
   content: "";
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__item:first-child .menu-social__link {
+  padding-left: 0;
 }
 
 .social {

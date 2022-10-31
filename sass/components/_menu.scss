@@ -24,7 +24,7 @@
   display: block;
   @extend %link;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 5vw;
   padding: 0;
   line-height: 1.18;
   color: var(--main-text-color);
@@ -36,10 +36,17 @@
     color: var(--accent-color);
   }
 
+  @media screen and (min-width: 480px) {
+    margin-right: 50px;
+    font-size: 40px;
+
+  }
+
   @media screen and (min-width: $tablet) {
     position: relative;
     padding: 32px 0;
     line-height: 1.14;
+    font-size: 14px;
   }
 }
 

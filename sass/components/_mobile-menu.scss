@@ -12,6 +12,7 @@
   transform: translateX(100%);
   @include transition(transform, null, null, var(--duration), var(--timing-function));
 
+
   @media screen and (min-width: $mobile) {
     padding: 48px 40px;
   }
@@ -38,9 +39,6 @@
 .menu__top {
   margin-bottom: 20px;
 
-  .menu__link {
-    font-size: 10vw;
-  }
 }
 
 .menu__bottom {
