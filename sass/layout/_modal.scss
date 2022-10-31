@@ -202,3 +202,26 @@
 .form__link {
   color: var(--accent-color);
 }
+
+
+.modal__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  @include transition($one:fill, $time:var(--duration), $func:var(--timing-function));
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

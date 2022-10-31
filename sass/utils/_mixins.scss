@@ -1,4 +1,4 @@
-@mixin transition($one, $two, $three, $time, $func) {
+@mixin transition($one, $two:none, $three:none, $time, $func) {
   transition-property: $one, $two, $three;
   transition-duration: $time;
   transition-timing-function: $func;

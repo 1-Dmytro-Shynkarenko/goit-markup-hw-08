@@ -301,54 +301,50 @@
       <section class="client">
         <div class="container">
           <h2 class="client__heading">Постійні клієнти</h2>
-      
-          <div class="swiper mySwiper">
-            <ul class="client__list swiper-wrapper">
-              <li class="client__item swiper-slide">
-                <a class="client__link" href="">
-                  <svg class="client__icon">
-                    <use href="./images/icons.svg#client-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="client__item swiper-slide">
-                <a class="client__link" href="">
-                  <svg class="client__icon">
-                    <use href="./images/icons.svg#client-2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="client__item swiper-slide">
-                <a class="client__link" href="">
-                  <svg class="client__icon">
-                    <use href="./images/icons.svg#client-3"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="client__item swiper-slide">
-                <a class="client__link" href="">
-                  <svg class="client__icon">
-                    <use href="./images/icons.svg#client-4"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="client__item swiper-slide">
-                <a class="client__link" href="">
-                  <svg class="client__icon">
-                    <use href="./images/icons.svg#client-5"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="client__item swiper-slide">
-                <a class="client__link" href="">
-                  <svg class="client__icon">
-                    <use href="./images/icons.svg#client-6"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-          </div>
+          <ul class="client__list">
+            <li class="client__item">
+              <a class="client__link" href="">
+                <svg class="client__icon">
+                  <use href="./images/icons.svg#client-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client__item">
+              <a class="client__link" href="">
+                <svg class="client__icon">
+                  <use href="./images/icons.svg#client-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client__item">
+              <a class="client__link" href="">
+                <svg class="client__icon">
+                  <use href="./images/icons.svg#client-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client__item">
+              <a class="client__link" href="">
+                <svg class="client__icon">
+                  <use href="./images/icons.svg#client-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client__item">
+              <a class="client__link" href="">
+                <svg class="client__icon">
+                  <use href="./images/icons.svg#client-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client__item">
+              <a class="client__link" href="">
+                <svg class="client__icon">
+                  <use href="./images/icons.svg#client-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -418,7 +414,7 @@
             <label for="subs" class="subs-form__title footer__title">Підпишіться на розсилку</label>
             <div class="subs-form__field">
               <input class="subs-form__input" type="email" name="email" id="subs" placeholder="Email">
-              <button type="submit" class="btn subs-form__btn">Подписаться
+              <button type="submit" class="btn subs-form__btn">Підписатися
                 <svg class="subs-form__icon" width="24" height="24">
                   <use href="./images/icons.svg#send"></use>
                 </svg>
@@ -482,9 +478,8 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-    
-        <form action="#" class="form js-speaker-form">
-          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="#" class="form">
     
           <div class="form__field">
             <label for="name" class="form__label">Імя</label>
@@ -527,7 +522,7 @@
             <svg class="form__icon-check" width="16" height="15">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span>Погоджуюся з розсилкою та приймаю<a class="form__link" href="">Умови договору</a></span>
+            <span>Погоджуюся з розсилкою та приймаю&nbsp<a class="form__link" href="">Умови договору</a></span>
           </label>
           </div>
     
@@ -537,14 +532,7 @@
       </div>
     </div>
 
-    <script src="./js/header-fixed.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/js-speaker-form.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

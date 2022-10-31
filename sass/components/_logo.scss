@@ -12,9 +12,4 @@
     color: var(--accent-color);
     @include transition(color, null, null, var(--duration), var(--timing-function));
   }
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }

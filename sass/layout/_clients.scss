@@ -17,26 +17,26 @@
     margin-bottom: 15px;
   }
 
-  //   display: flex;
-  //   margin: -15px;
+display: flex;
+margin: -15px;
 
-  //   @media screen and (max-width: 1199px) {
-  //     flex-wrap: wrap;
-  //   }
+@media screen and (max-width: 1199px) {
+flex-wrap: wrap;
+}
 }
 
-// .client__item {
-//   margin: 15px;
-//   width: calc(100% / 2 - 30px);
+.client__item {
+margin: 15px;
+width: calc(100% / 2 - 30px);
 
-//   @media screen and (min-width: $tablet) {
-//     width: calc(100% / 3 - 30px);
-//   }
+@media screen and (min-width: $tablet) {
+width: calc(100% / 3 - 30px);
+}
 
-//   @media screen and (min-width: $desktop) {
-//     width: calc(100% / 6 - 30px);
-//   }
-// }
+@media screen and (min-width: $desktop) {
+width: calc(100% / 6 - 30px);
+}
+}
 
 .client__link {
   @extend %link;
