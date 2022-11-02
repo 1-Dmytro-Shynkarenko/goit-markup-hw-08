@@ -214,6 +214,11 @@ input:-webkit-autofill:active {
     padding: 48px 40px;
   }
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
@@ -266,14 +271,14 @@ input:-webkit-autofill:active {
 }
 @media screen and (min-width: 768px) {
   .menu__item:not(:last-child) {
-    margin-right: 50px;
+    /*margin-right: 50px;*/
   }
 }
 
 .menu__link {
   display: block;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 40px;
   padding: 0;
   line-height: 1.18;
   color: var(--main-text-color);
